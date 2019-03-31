@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Course Adding</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style >
+		.course{
+			position: absolute;
+			top: 20%;
+			left: 40%;
+		}
+		.course input{
+			width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  color: #3e3e40;
+  font-size: 14px;
+  outline: none;
+  transform: all 0.5s ease;
+		}
+		body{
+			background-color: #00BFFF;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<p>Exam Schedular</p>
+		<ul>
+		<li><a href="project.html">Home</a></li>
+		<li><a href="#">Exam Routine</a>
+			 <ul>
+			 	  <li><a href="CSE.html">CSE</a></li>
+			 	  <li><a href="EEE.html">EEE</a></li>
+			 	  <li><a href="CE.html">CE</a></li>
+
+			 	</ul>	
+		</li>
+		<li><a href="offday.html">Off day</a></li>
+		<li><a href="Welcome page.html">Log out</a></li>	
+	</ul>
+	</nav>
+	<div class="course">
+   <form method="post" action="course add.php">
+   	      <input type="number" name="semister"placeholder="Enter semister" required>
+	      <input type="text" name="courseid"placeholder="Enter course id" required>
+	      <br>
+	      <input type="text" name="coursetitle"placeholder="Enter course title" required>
+	      <br>
+	      <input type="number" step="0.01" placeholder="Enter course credit"name="coursecredit">
+	      <br>
+	      <input type="submit" name="submit" value="submit">
+   </form>
+</div>
+</body>
+</html>

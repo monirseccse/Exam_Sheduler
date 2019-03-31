@@ -1,0 +1,123 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<title> Exam Routine Schedular </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style >
+	body{
+	background: #34b3a0;
+}
+
+.month{
+	position: absolute;
+	top: 30%;
+	left: 20%;
+
+}
+.month select{
+	
+	background: #fff;
+	 color: #34b3a0;
+	
+	padding: 10px;
+	font-size: 20px;
+	font-family: sans-serif;
+	border: none;
+	box-shadow: 0 5px 25px rgba(0,0,0,.5)
+}
+
+.btn{
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  color: green;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+	.month input{
+			width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  color: #3e3e40;
+  font-size: 14px;
+  outline: none;
+  transform: all 0.5s ease;
+		}
+		body{
+			background-color: 00FA9A;
+		}
+</style>
+</head>
+<body>
+	<nav>
+		<p>Exam Schedular</p>
+		<ul>
+		<li><a href="project.html">Home</a></li>
+		<li><a href="#">Exam Routine</a>
+			 <ul>
+			 	  <li><a href="CSE.html">CSE</a></li>
+			 	  <li><a href="EEE.html">EEE</a></li>
+			 	  <li><a href="CE.html">CE</a></li>
+
+			 	</ul>	
+		</li>
+		<li><a href="offday.html">Off day</a></li>	
+		<li><a href="Welcome page.html">Log out</a></li>
+	</ul>
+	</nav>
+	<div class="month">
+		<form method="post"action="startdate.php">
+			<select name="semister">
+		<option value="1">1st Semister</option>
+		<option value="2">2nd Semister</option>
+		<option value="3">3rd Semister</option>
+		<option value="4">4th Semister</option>
+		<option value="5">5th Semister</option>
+		<option value="6">6th Semister</option>
+		<option value="7">7th Semister</option>
+		<option value="8">8th Semister</option>
+	</select>
+	<br><br>
+		<select name="months">
+			<option value="1">January</option>
+			<option value="2">February</option>
+			<option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+            
+		</select>
+		<br>
+		<br>
+		<select  name="days">
+			<option value="Saturday">Saturday</option>
+			<option value="Sunday">Sunday</option>
+			<option value="Monday">Monday</option>
+			<option value="Tuesday">Tuesday</option>
+			<option value="Wednesday">Wednesday</option>
+			<option value="Thursday">Thursday</option>
+			<option value="Friday">Friday</option>
+		</select>
+		<br><br>
+		<input type="number" placeholder="Enter Current Year"name="years"required >
+		<br><br>
+		<input type="number" placeholder="Enter Exam date"name="dates" required>
+		<br><br>
+		<input type="submit" name="submit"class="btn">
+	</form>
+	</div>
+	
+	
+</body>
+</html>
